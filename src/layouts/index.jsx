@@ -8,17 +8,24 @@ import 'typeface-roboto'
 import 'typeface-roboto-mono'
 import './index.css'
 
+import favicon from '../assets/summer_camp_2018_logo_favicon_192x192.png'
+
 const Layout = ({ children, data }) => (
-  <div>
+  <div style={{height: '100%'}}>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+        { name: 'author', content: 'Tommaso Negri'},
+        { name: 'copyrigth', content: '© 2018 Tommaso Negri'}
       ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
+    >
+    <link rel="icon" type="image/png" href={favicon} sizes="192x192"/>
+    </Helmet>
+    {children()}
+    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+    {/* <div
       style={{
         margin: '0 auto',
         maxWidth: 960,
@@ -27,7 +34,7 @@ const Layout = ({ children, data }) => (
       }}
     >
       {children()}
-    </div>
+    </div> */}
   </div>
 )
 
