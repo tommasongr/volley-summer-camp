@@ -1,0 +1,33 @@
+{
+  "name": "volley-summer-camp",
+  "description": "Volley Summer Camp Website",
+  "version": "1.0.0",
+  "author": "Tommaso Negri <tommaso.negri98@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.270",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.3.2",
+    "typeface-roboto": "0.0.54",
+    "typeface-roboto-mono": "0.0.54"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tommaso-negri/volley-summer-camp.git"
+  }
+}
