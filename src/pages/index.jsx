@@ -17,6 +17,7 @@ const PageContainer = styled.div`
     justify-self: center;
     padding-bottom: 50px;
     cursor: default;
+    filter: blur(25px);
   }
 
   @media screen and (max-width: 1240px) {
