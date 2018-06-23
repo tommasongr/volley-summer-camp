@@ -48,19 +48,22 @@ const PostCardRightStyle = styled.div`
   }
 `;
 
-export default class PostCardRight extends Component {
-  render() {
-    return (
-      <Link to="/post">
-        <PostCardRightStyle>
-          <div className="postCardImg"></div>
-          <div className="postCardText">
-            <h2>23/07/2018</h2>
-            <h4>1^ Uscita</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe repellendus esse ab debitis placeat adipisci eveniet magni, consequuntur fugiat? Dolorem, quaerat labore. Consectetur quo voluptates maiores temporibus officia, at pariatur.</p>
-          </div>
-        </PostCardRightStyle>
-      </Link>
-    )
-  }
-}
+const PostCardRight = ({ post }) => (
+  <Link to={post.fields.slug}>
+    <PostCardRightStyle>
+      <div className="postCardImg"></div>
+      <div className="postCardText">
+        <h2>{post.frontmatter.date}</h2>
+        <h4>{post.frontmatter.subtitle}</h4>
+        <p>{post.excerpt}</p>
+        {/* <p
+          dangerouslySetInnerHTML={{
+            __html: post.excerpt
+          }}
+        /> */}
+      </div>
+    </PostCardRightStyle>
+  </Link>
+)
+
+export default PostCardRight;
