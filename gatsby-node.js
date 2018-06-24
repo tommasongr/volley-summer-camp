@@ -33,12 +33,19 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       }
     `).then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      result.data.allMarkdownRemark.edges.forEach(({ node }, i) => {
+        let colorTmp = "";
+        if(i % 2 === 0) {
+          colorTmp = 'red'
+        } else {
+          colorTmp = 'blue'
+        }
         createPage({
           path: node.fields.slug,
-          component: path.resolve('./src/pages/post.jsx'),
+          component: path.resolve('./src/layouts/PostPage.jsx'),
           context: {
-            slug: node.fields.slug
+            slug: node.fields.slug,
+            color: colorTmp
           },
         })
       })

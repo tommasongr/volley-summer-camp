@@ -22,6 +22,7 @@ const Layout = ({ children, data }) => (
       ]}
     >
     <link rel="icon" type="image/png" href={favicon} sizes="192x192"/>
+    <link rel="manifest" href={data.file.publicURL}/>
     </Helmet>
     {children()}
     {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
@@ -50,6 +51,9 @@ export const query = graphql`
       siteMetadata {
         title
       }
+    }
+    file(name: {eq: "manifest"}) {
+      publicURL
     }
   }
 `

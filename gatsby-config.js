@@ -7,10 +7,31 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "img",
+        path: `${__dirname}/src/assets/images/`
+      }
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "src",
         path: `${__dirname}/src/`
       }
     },
-    'gatsby-transformer-remark'
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 3000,
+            }
+          }
+        ]
+      }
+    }
   ]
 }
