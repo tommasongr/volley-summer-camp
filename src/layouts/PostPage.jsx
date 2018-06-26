@@ -24,9 +24,19 @@ const PostPageStyle = styled.div`
       margin: 0;
     }
 
-    p:first-of-type {
+    h4:first-of-type {
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.2em;
+    }
+
+    p:nth-of-type(odd) {
       width: 90%;
       margin-bottom: 0;
+      margin-top: 50px;
+    }
+
+    p:first-of-type {
       margin-top: 0;
     }
 
@@ -73,6 +83,9 @@ export default class PostPage extends Component {
         <PostFrontImg sizes={data.markdownRemark.frontmatter.frontImg.childImageSharp.sizes} />
 
         <div className="postPageText" style={{color: textColor}}>
+          {data.markdownRemark.frontmatter.round === 1 ?
+            <h4>1° Turno</h4> : <h4>2° Turno</h4>
+          }
           <h1>{data.markdownRemark.frontmatter.date}</h1>
           <h4>{data.markdownRemark.frontmatter.subtitle}</h4>
           <div
@@ -93,6 +106,7 @@ export const query = graphql`
         title
         subtitle
         date(formatString: "DD/MM/YYYY")
+        round
         frontImg {
           childImageSharp {
             sizes(maxWidth: 3000) {

@@ -33,7 +33,6 @@ const PostCardRightStyle = styled.div`
 
     h4:first-of-type {
       font-weight: 300;
-      margin: 0;
       font-family: 'Roboto', sans-serif;
       font-size: 1.2em;
     }
