@@ -66,15 +66,17 @@ const PageContainer = styled.div`
   }
 `;
 
-const Header = () => (
-  <PageContainer>
-    <img src={LogoBig} alt="Summer Camp 2018 Logo"/>
-    <div>
-      <h1>Volley Summer Camp 2018</h1>
-      <h3>La magia sta per cominciare</h3>
-      <p>Ciaooo</p>
-    </div>
-  </PageContainer>
-)
-
-export default Header
+export default class Header extends React.Component {
+  render() {
+    return (
+      <PageContainer>
+        <img src={LogoBig} alt="Summer Camp 2018 Logo"/>
+        <div>
+          <h1>Volley Summer Camp 2018</h1>
+          <h3>La magia sta per cominciare</h3>
+          <p>Ciaooo</p>
+        </div>
+      </PageContainer>
+    )
+  }
+}

@@ -31,6 +31,13 @@ const PostCardLeftStyle = styled.div`
       margin: 0.4em 0;
     }
 
+    h4:first-of-type {
+      font-weight: 300;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.2em;
+    }
+
     p {
       margin: 0;
       width: 65%;
@@ -61,8 +68,10 @@ const PostCardLeft = ({ post }) => (
   <Link to={post.fields.slug}>
     <PostCardLeftStyle>
       <PostCardLeftImg sizes={post.frontmatter.frontImg.childImageSharp.sizes} />
-
       <div className="postCardText">
+        {post.frontmatter.round === 1 ?
+          <h4>1° Turno</h4> : <h4>2° Turno</h4>
+        }
         <h2>{post.frontmatter.date}</h2>
         <h4>{post.frontmatter.subtitle}</h4>
         <p>{post.excerpt}</p>

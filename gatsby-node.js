@@ -45,7 +45,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           component: path.resolve('./src/layouts/PostPage.jsx'),
           context: {
             slug: node.fields.slug,
-            color: colorTmp
+            color: colorTmp,
           },
         })
       })

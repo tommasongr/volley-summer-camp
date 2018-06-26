@@ -24,9 +24,21 @@ const PostPageStyle = styled.div`
       margin: 0;
     }
 
-    p {
+    p:first-of-type {
       width: 90%;
       margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 50px;
+      .gatsby-resp-image-link {
+        margin-bottom: 30px;
+      }
+      .gatsby-resp-image-background-image {
+        padding-top: 56.25%;
+        padding-bottom: 0 !important;
+      }
     }
   }
 `;
@@ -69,48 +81,14 @@ export default class PostPage extends Component {
           }}
           />
         </div>
-        <PostPageImgContainer />
       </PostPageStyle>
     )
   }
 }
 
-const PostPageImgContainerStyle = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-
-  div {
-    width: 100%;
-    display: block;
-    background-image: url("https://source.unsplash.com/collection/190727");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  div::before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: 56.25%;
-  }
-`;
-
-const PostPageImgContainer = () => (
-  <PostPageImgContainerStyle>
-    <Link to=""><div></div></Link>
-    <Link to=""><div></div></Link>
-    <Link to=""><div></div></Link>
-  </PostPageImgContainerStyle>
-)
-
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
+    markdownRemark(fields: { slug: { eq: $slug }}) {
       frontmatter {
         title
         subtitle
