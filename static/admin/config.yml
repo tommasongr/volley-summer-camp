@@ -5,7 +5,7 @@ backend:
 media_folder: static/assets
 
 collections:
-  - name: posts
+  - name: post
     label: Posts
     folder: src/posts
     create: true
