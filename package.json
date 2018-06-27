@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Tommaso Negri <tommaso.negri98@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.270",
+    "gatsby": "^1.9.273",
     "gatsby-image": "^1.0.54",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-manifest": "^1.0.27",
