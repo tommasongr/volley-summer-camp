@@ -13,7 +13,7 @@ export default class Layout extends React.Component {
   render() {
     const { children, data } = this.props;
     return (
-      <div style={{height: '100%', margin: '20px'}}>
+      <div style={{height: '100%'}}>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[

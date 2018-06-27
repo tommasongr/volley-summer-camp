@@ -15,13 +15,20 @@ const PostPageStyle = styled.div`
     display: inline-block;
     font-size: 1.2em;
     letter-spacing: 0.3px;
+    transition: 0.1s ease-in-out;
   }
 
   .postPageText {
     margin-top: 50px;
+    transition: 0.1s ease-in-out;
 
     h1 {
       margin: 0;
+      transition: 0.1s ease-in-out;
+    }
+
+    h4 {
+      transition: 0.1s ease-in-out;
     }
 
     h4:first-of-type {
@@ -42,12 +49,87 @@ const PostPageStyle = styled.div`
 
     p {
       margin-top: 50px;
+      transition: 0.1s ease-in-out;
       .gatsby-resp-image-link {
         margin-bottom: 30px;
       }
       .gatsby-resp-image-background-image {
         padding-top: 56.25%;
         padding-bottom: 0 !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    .returnButton {
+      font-size: 1em;
+      margin-top: 10px;
+    }
+    .postPageText {
+      margin-top: 30px;
+
+      h1 {
+        font-size: 3.5em;
+      }
+
+      h4 {
+        font-size: 1em;
+      }
+
+      h4:first-of-type {
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 1em;
+        margin-top: 30px;
+
+        .gatsby-resp-image-link {
+          margin-bottom: 20px;
+        }
+      }
+
+      p:nth-of-type(odd) {
+        width: 90%;
+        margin-bottom: 0;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .returnButton {
+      font-size: 0.8em;
+      margin-top: 10px;
+    }
+    .postPageText {
+      margin-top: 20px;
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      h4 {
+        font-size: 0.8em;
+      }
+
+      h4:first-of-type {
+        font-size: 0.8em;
+      }
+
+      p {
+        font-size: 0.8em;
+        margin-top: 20px;
+
+        .gatsby-resp-image-link {
+          margin-bottom: 10px;
+        }
+      }
+
+      p:nth-of-type(odd) {
+        width: 90%;
+        margin-bottom: 0;
+        margin-top: 20px;
       }
     }
   }

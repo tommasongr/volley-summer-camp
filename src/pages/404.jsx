@@ -9,20 +9,25 @@ const Page404Style = styled.div`
   grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
+  transition: 0.1s ease-in-out;
 
   div {
     margin-bottom: 50px;
     display: grid;
     justify-items: center;
+    transition: 0.1s ease-in-out;
 
     h1 {
       margin: 0;
       font-size: 10em;
+      transition: 0.1s ease-in-out;
     }
 
     p {
       margin: 20px 0;
       margin-bottom: 30px;
+      text-align: center;
+      transition: 0.1s ease-in-out;
     }
 
     .returnButton {
@@ -33,6 +38,37 @@ const Page404Style = styled.div`
       font-size: 1.2em;
       letter-spacing: 0.3px;
       margin: 0;
+      transition: 0.1s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    border: solid 15px #F7F7F7;
+    height: calc(100vh - 50px);
+
+    div {
+      margin: 0 20px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    border: solid 15px #F7F7F7;
+    height: calc(100vh - 50px);
+
+    div {
+      margin: 0 20px;
+
+      h1 {
+        font-size: 8em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .returnButton {
+        font-size: 1em;
+      }
     }
   }
 `;

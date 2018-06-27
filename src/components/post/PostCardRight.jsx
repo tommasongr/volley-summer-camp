@@ -17,18 +17,20 @@ const PostCardRightStyle = styled.div`
 
   .postCardText {
     position: absolute;
-    width: 50%;
+    max-width: 80%;
     justify-self: right;
     align-self: center;
     text-align: right;
     color: red;
 
     h2 {
-      margin: 0
+      margin: 0;
+      transition: 0.1s ease-in-out;
     }
 
     h4 {
       margin: 0.4em 0;
+      transition: 0.1s ease-in-out;
     }
 
     h4:first-of-type {
@@ -39,8 +41,99 @@ const PostCardRightStyle = styled.div`
 
     p {
       margin: 0;
-      width: 65%;
+      width: 40%;
       float: right;
+      transition: 0.1s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .postCardText {
+      h2 {
+        font-size: 3.5em;
+      }
+
+      h4 {
+        font-size: 1em;
+      }
+      
+      h4:first-of-type {
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 1em;
+        width: 55%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    margin: 30px auto;
+
+    .postCardText {
+      h2 {
+        font-size: 2.5em;
+      }
+
+      h4 {
+        font-size: 0.8em;
+      }
+      
+      h4:first-of-type {
+        font-size: 0.8em;
+      }
+
+      p {
+        font-size: 0.8em;
+        width: 65%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 20px auto;
+
+    .postCardText {
+      h2 {
+        font-size: 1.5em;
+      }
+
+      h4 {
+        font-size: 0.6em;
+      }
+      
+      h4:first-of-type {
+        font-size: 0.6em;
+      }
+
+      p {
+        font-size: 0.6em;
+        width: 65%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    margin: 15px auto;
+    
+    .postCardText {
+      h2 {
+        font-size: 1.5em;
+      }
+
+      h4 {
+        font-size: 0.6em;
+      }
+      
+      h4:first-of-type {
+        font-size: 0.6em;
+      }
+
+      p {
+        font-size: 0.6em;
+        width: 80%;
+      }
     }
   }
 `;

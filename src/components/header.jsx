@@ -10,6 +10,7 @@ const PageContainer = styled.div`
   border: solid 20px #F7F7F7;
   height: calc(100vh - 80px);
   color: rgba(0, 0, 0, 0.87);
+  transition: 0.1s ease-in-out;
 
   img {
     display: block;
@@ -18,6 +19,38 @@ const PageContainer = styled.div`
     justify-self: center;
     padding-bottom: 50px;
     cursor: default;
+    transition: 0.1s ease-in-out;
+  }
+
+  div {
+    max-width: 500px;
+    justify-self: center;
+    h1 {
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 400;
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 0;
+      transition: 0.1s ease-in-out;
+    }
+    h3 {
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 400;
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 0;
+      margin-top: 10px;
+      transition: 0.1s ease-in-out;
+    }
+    p {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #ff2727;
+      font-weight: 500;
+      font-family: 'Roboto Mono', monospace;
+      transition: 0.1s ease-in-out;
+    }
   }
 
   @media screen and (max-width: 1240px) {
@@ -36,32 +69,58 @@ const PageContainer = styled.div`
     img {
       width: 90%
     }
+
+    div {
+      h1 {
+        font-size: 1.3rem;
+      }
+      h3 {
+        font-size: 1rem
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    }
   }
 
-  div {
-    max-width: 500px;
-    justify-self: center;
-    h1 {
-      font-family: 'Roboto Mono', monospace;
-      font-weight: 400;
-      font-size: 1.5rem;
-      margin: 0;
+  @media screen and (max-width: 570px) {
+    border: solid 15px #F7F7F7;
+    height: calc(100vh - 50px);
+    img {
+      width: 80%
+    }
 
+    div {
+      h1 {
+        font-size: 1.2rem;
+      }
+      h3 {
+        font-size: 0.9rem
+      }
+      p {
+        font-size: 1.2rem;
+      }
     }
-    h3 {
-      font-family: 'Roboto Mono', monospace;
-      font-weight: 400;
-      font-size: 1.1rem;
-      margin: 0;
-      margin-top: 10px;
+  }
+
+  @media screen and (max-width: 400px) {
+    border: solid 10px #F7F7F7;
+    height: calc(100vh - 40px);
+    img {
+      width: 80%
     }
-    p {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 1.5rem;
-      color: #ff2727;
-      font-weight: 500;
-      font-family: 'Roboto Mono', monospace
+
+    div {
+      margin: 0 10px;
+      h1 {
+        font-size: 1rem;
+      }
+      h3 {
+        font-size: 0.8rem
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   }
 `;
