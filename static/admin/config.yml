@@ -3,11 +3,10 @@ backend:
   repo: tommaso-negri/volley-summer-camp
 
 media_folder: static/assets
-public_folder: assets
 
 collections:
-  - name: post
-    label: Post
+  - name: posts
+    label: Posts
     folder: src/posts
     create: true
     fields:
