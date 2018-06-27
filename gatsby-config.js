@@ -21,13 +21,6 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "blog",
-        path: `${__dirname}/blog/`
-      }
-    },
-    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -42,6 +35,5 @@ module.exports = {
         ]
       }
     },
-    'gatsby-plugin-netlify-cms',
   ]
 }

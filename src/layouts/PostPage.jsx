@@ -78,7 +78,7 @@ export default class PostPage extends Component {
     const textColor = this.props.pathContext.color;
     return (
       <PostPageStyle>
-        <Link to="/" className="returnButton">Return /></Link>
+        <Link to="/" className="returnButton">Indietro /></Link>
       
         <PostFrontImg sizes={data.markdownRemark.frontmatter.frontImg.childImageSharp.sizes} />
 
