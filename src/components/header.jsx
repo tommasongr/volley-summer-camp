@@ -169,9 +169,27 @@ const PageContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 414px) and (max-height: 736px) {
+    padding: 20px 0;
+    height: auto;
+    grid-template-rows: unset;
+    grid-auto-rows: auto;
+    img {
+      margin-top: 0;
+      padding-bottom: 25px;
+    }
+
+    div {
+      p {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
   @media screen and (max-width: 568px) and (max-height: 320px) {
     border: solid 15px #F7F7F7;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 40px);
     img {
       width: 40%
       margin-top: 20px;
