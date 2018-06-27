@@ -27,11 +27,14 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 3000,
+              maxWidth: 2000,
+              linkImagesToOriginal: true,
+              backgroundColor: '#f7f7f7'
             }
           }
         ]
       }
     },
+    'gatsby-plugin-netlify-cms',
   ]
 }
