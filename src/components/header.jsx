@@ -83,6 +83,28 @@ const PageContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 768px) and (max-height: 450px) {
+    border: solid 15px #F7F7F7;
+    height: calc(100vh - 50px);
+    img {
+      width: 40%
+      margin-top: 20px;
+    }
+
+    div {
+      h1 {
+        font-size: 1.3rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 1.3rem;
+        margin-top: 10px;
+      }
+    }
+  }
+
   @media screen and (max-width: 570px) {
     border: solid 15px #F7F7F7;
     height: calc(100vh - 50px);
@@ -99,6 +121,29 @@ const PageContainer = styled.div`
       }
       p {
         font-size: 1.2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 667px) and (max-height: 375px) {
+    border: solid 15px #F7F7F7;
+    height: calc(100vh - 50px);
+    img {
+      width: 40%
+      margin-top: 20px;
+      padding-bottom: 35px;
+    }
+
+    div {
+      h1 {
+        font-size: 1.1rem;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+      p {
+        font-size: 1.1rem;
+        margin-top: 10px;
       }
     }
   }
@@ -120,6 +165,29 @@ const PageContainer = styled.div`
       }
       p {
         font-size: 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 568px) and (max-height: 320px) {
+    border: solid 15px #F7F7F7;
+    height: calc(100vh - 50px);
+    img {
+      width: 40%
+      margin-top: 20px;
+      padding-bottom: 25px;
+    }
+
+    div {
+      h1 {
+        font-size: 1rem;
+      }
+      h3 {
+        font-size: 0.75rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 10px;
       }
     }
   }

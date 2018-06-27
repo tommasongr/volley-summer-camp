@@ -62,3 +62,9 @@ p {
     margin: 10px;
   }
 }
+
+@media screen and (max-width: 768px) and (max-height: 450px) {
+  body {
+    margin: 10px;
+  }
+}
