@@ -34,6 +34,18 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Volley Summer Camp",
+        short_name: "Summer Camp",
+        start_url: ".",
+        background_color: "#fff",
+        theme_color: "#fff",
+        display: "standalone",
+        icon: "src/assets/summer_camp_2018_logo_512x512.jpg"
+      }
+    },
   ]
 }

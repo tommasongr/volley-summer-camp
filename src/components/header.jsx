@@ -74,7 +74,7 @@ export default class Header extends React.Component {
         <div>
           <h1>Volley Summer Camp 2018</h1>
           <h3>La magia sta per cominciare</h3>
-          <p>Ciaooo</p>
+          <p>Blog Template di Prova</p>
         </div>
       </PageContainer>
     )
