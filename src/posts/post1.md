@@ -3,7 +3,7 @@ title: "Post 1"
 subtitle: "1^ Uscita"
 date: "2018-07-23T00:00:00.000Z"
 published: true
-frontImg: "../assets/images/img1.jpg"
+frontImg: "../assets/images/post1/img1.jpg"
 round: 1
 ---
 
