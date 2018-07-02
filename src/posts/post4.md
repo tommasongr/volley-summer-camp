@@ -1,9 +1,9 @@
 ---
-title: "Post 2"
+title: "Post 4"
 subtitle: "2^ Uscita"
-date: "2018-07-24T00:00:00.000Z"
+date: "2018-07-25T12:00:00.000Z"
 published: true
-frontImg: "../assets/images/img2.jpg"
+frontImg: "../assets/images/img4.jpg"
 round: 2
 ---
 
