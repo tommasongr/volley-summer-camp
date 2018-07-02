@@ -11,4 +11,4 @@ Eccoci online. Dopo una faticosissima giornata ... al mare i nostri atleti sono 
 Comunicazioni di servizio: non è possibile commentare le foto. Le foto sono scaricabili.
 Ciaoooo
 
-![](../assets/images/ipost1/vsc1.jpg)
+<!-- ![](../assets/images/post1/vsc1.jpg) -->
