@@ -153,20 +153,23 @@ const PostCardLeftImg = styled(Img)`
   }
 `;
 
-const PostCardLeft = ({ post }) => (
-  <Link to={post.fields.slug}>
-    <PostCardLeftStyle>
-      <PostCardLeftImg sizes={post.frontmatter.frontImg.childImageSharp.sizes} />
-      <div className="postCardText">
-        {post.frontmatter.round === 1 ?
-          <h4>1° Turno</h4> : <h4>2° Turno</h4>
-        }
-        <h2>{post.frontmatter.date}</h2>
-        <h4>{post.frontmatter.subtitle}</h4>
-        <p>{post.excerpt}</p>
-      </div>
-    </PostCardLeftStyle>
-  </Link>
-)
-
-export default PostCardLeft
+export default class PostCardLeft extends Component {  
+  render() {
+    const { post } = this.props;
+    return (
+      <Link to={post.fields.slug}>
+        <PostCardLeftStyle>
+          <PostCardLeftImg sizes={post.frontmatter.frontImg.childImageSharp.sizes} />
+          <div className="postCardText data-animate">
+            {post.frontmatter.round === 1 ?
+              <h4>1° Turno</h4> : <h4>2° Turno</h4>
+            }
+            <h2>{post.frontmatter.date}</h2>
+            <h4>{post.frontmatter.subtitle}</h4>
+            <p>{post.excerpt}</p>
+          </div>
+        </PostCardLeftStyle>
+      </Link>
+    )
+  }
+}

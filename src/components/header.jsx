@@ -218,8 +218,8 @@ export default class Header extends React.Component {
         <img src={LogoBig} alt="Summer Camp 2018 Logo"/>
         <div>
           <h1>Volley Summer Camp 2018</h1>
-          <h3>La magia sta per cominciare</h3>
-          <p>Blog Template di Prova</p>
+          <h3>La magia è cominciata</h3>
+          <p>Photo Blog S.C. 2018</p>
         </div>
       </PageContainer>
     )

@@ -116,7 +116,7 @@ const PostCardRightStyle = styled.div`
 
   @media screen and (max-width: 375px) {
     margin: 15px auto;
-    
+
     .postCardText {
       h2 {
         font-size: 1.5em;
