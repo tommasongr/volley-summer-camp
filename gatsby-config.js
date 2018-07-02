@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Volley Summer Camp 2018',
+    basePath: 'https://volley-summer-camp.netlify.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet', 'gatsby-plugin-styled-components',

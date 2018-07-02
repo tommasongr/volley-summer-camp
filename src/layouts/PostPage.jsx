@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
+import get from 'lodash/get'
+import ReactDisqusThread from 'react-disqus-thread'
 
 const PostPageStyle = styled.div`
   max-width: 1050px;
@@ -158,6 +160,12 @@ export default class PostPage extends Component {
   render() {
     const { data } = this.props;
     const textColor = this.props.pathContext.color;
+    // console.log(data.markdownRemark.fields.slug)
+
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const fullPath = get(this.props, 'data.site.siteMetadata.basePath') + get(this.props, 'data.markdownRemark.fields.slug')
+    const postTitle = data.markdownRemark.frontmatter.title | siteTitle
+
     return (
       <PostPageStyle>
         <Link to="/" className="returnButton">Indietro /></Link>
@@ -176,6 +184,13 @@ export default class PostPage extends Component {
           }}
           />
         </div>
+        <ReactDisqusThread
+          shortname={'volley-summer-camp'}
+          identifier={data.markdownRemark.frontmatter.id}
+          title={`${data.markdownRemark.frontmatter.title} | ${siteTitle}`}
+          url={fullPath}
+          onNewComment={this.handleNewComment}
+		    style={{marginTop: '50px'}}/>
       </PostPageStyle>
     )
   }
@@ -183,9 +198,19 @@ export default class PostPage extends Component {
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
+    site {
+      siteMetadata {
+        title
+        basePath
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug }}) {
+      fields {
+        slug
+      }
       frontmatter {
         title
+        id
         subtitle
         date(formatString: "DD/MM/YYYY")
         round
