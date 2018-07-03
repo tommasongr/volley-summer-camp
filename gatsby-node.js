@@ -36,9 +36,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }, i) => {
         let colorTmp = "";
         if(i % 2 === 0) {
-          colorTmp = 'red'
-        } else {
           colorTmp = 'blue'
+        } else {
+          colorTmp = 'red'
         }
         createPage({
           path: node.fields.slug,

@@ -159,7 +159,6 @@ const PostFrontImg = styled(Img)`
 export default class PostPage extends Component {
   render() {
     const { data } = this.props;
-    const textColor = this.props.pathContext.color;
     // console.log(data.markdownRemark.fields.slug)
 
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
@@ -172,7 +171,7 @@ export default class PostPage extends Component {
       
         <PostFrontImg sizes={data.markdownRemark.frontmatter.frontImg.childImageSharp.sizes} />
 
-        <div className="postPageText" style={{color: textColor}}>
+        <div className="postPageText" style={{color: 'black'}}>
           {data.markdownRemark.frontmatter.round === 1 ?
             <h4>1° Turno</h4> : <h4>2° Turno</h4>
           }

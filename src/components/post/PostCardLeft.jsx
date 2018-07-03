@@ -156,6 +156,7 @@ const PostCardLeftImg = styled(Img)`
 export default class PostCardLeft extends Component {  
   render() {
     const { post } = this.props;
+    const colorLink = 'red';
     return (
       <Link to={post.fields.slug}>
         <PostCardLeftStyle>
