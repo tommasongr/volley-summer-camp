@@ -1,28 +1,20 @@
 ---
-title: "Post 2"
-id: '2'
-subtitle: "2^ Uscita"
-date: "2018-07-03T23:14:45.000Z"
+title: "Post 3"
+id: '3'
+subtitle: "3^ Uscita"
+date: "2018-07-03T23:23:45.000Z"
 published: true
-frontImg: "../assets/images/post2/vsc11.jpg"
+frontImg: "../assets/images/post3/vsc20.jpg"
 round: 1
 ---
 
-Aiutooooo! sono iniziati gli allenamenti. Ma non si faceva il bagno?
-Venite a salvarci!!!
-Ricomunicazione di servizio: è possibile commentare. Scatenatevi
+Ecco i nostri atleti impegnati in un duro lavoro sulla sabbia.
+A presto. Ciaooooo
 
-![](../assets/images/post2/vsc2.jpg)
-![](../assets/images/post2/vsc3.jpg)
-![](../assets/images/post2/vsc4.jpg)
-![](../assets/images/post2/vsc5.jpg)
-![](../assets/images/post2/vsc6.jpg)
-![](../assets/images/post2/vsc7.jpg)
-![](../assets/images/post2/vsc8.jpg)
-![](../assets/images/post2/vsc9.jpg)
-![](../assets/images/post2/vsc10.jpg)
-![](../assets/images/post2/vsc12.jpg)
-
-Domanda: perchè non si vedono le coste di Marco?
-
-![](../assets/images/post2/vsc13.jpg)
+![](../assets/images/post3/vsc14.jpg)
+![](../assets/images/post3/vsc15.jpg)
+![](../assets/images/post3/vsc16.jpg)
+![](../assets/images/post3/vsc17.jpg)
+![](../assets/images/post3/vsc18.jpg)
+![](../assets/images/post3/vsc19.jpg)
+![](../assets/images/post3/vsc21.jpg)
