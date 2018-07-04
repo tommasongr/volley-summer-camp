@@ -1,7 +1,7 @@
 ---
 title: "Post 2"
 id: '2'
-subtitle: "2^ Uscita"
+subtitle: "1^ Uscita"
 date: "2018-07-03T23:14:45.000Z"
 published: true
 frontImg: "../assets/images/post2/vsc11.jpg"
