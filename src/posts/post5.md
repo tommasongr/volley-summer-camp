@@ -9,7 +9,7 @@ round: 1
 ---
 
 SPECIAL EDITION: LA FATICA DELLA ... PASTA ALLO SCOGLIO
-Comunicazione tecnica: causa problema scatto foto con cell. le foto sono deformante ma quando le scaricate sono ok. Ciaoooo
+Comunicazione tecnica: causa problema scatto foto con cell. le foto sono deformate ma quando le scaricate sono ok. Ciaoooo
 
 ![](../assets/images/post5/vsc40.jpg)
 ![](../assets/images/post5/vsc41.jpg)
