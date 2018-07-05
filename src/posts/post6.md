@@ -29,4 +29,4 @@ Anche l'ultimo umano che non mangiava Nutella si è convertito. Dopo il primo mo
 ![](../assets/images/post6/vsc68.jpg)
 ![](../assets/images/post6/vsc69.jpg)
 ![](../assets/images/post6/vsc64.jpg)
-![](../assets/images/post6/vsc70.jpg)
+![](../assets/images/post6/vsc70pvsc.jpg)
