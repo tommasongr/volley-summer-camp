@@ -55,10 +55,6 @@ const PostPageStyle = styled.div`
       .gatsby-resp-image-link {
         margin-bottom: 30px;
       }
-      .gatsby-resp-image-background-image {
-        padding-top: 56.25%;
-        padding-bottom: 0 !important;
-      }
     }
   }
 
