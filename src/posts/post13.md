@@ -23,7 +23,7 @@ Con noi ad allenarsi anche due fenicotteri rosa
 ![](../assets/images/post13/vsc190.jpg)
 ![](../assets/images/post13/vsc191.jpg)
 ![](../assets/images/post13/vsc192.jpg)
-![](../assets/images/post13/vsc193.jpg
+![](../assets/images/post13/vsc193.jpg)
 ![](../assets/images/post13/vsc195.jpg)
 ![](../assets/images/post13/vsc196.jpg)
 ![](../assets/images/post13/vsc197.jpg)
