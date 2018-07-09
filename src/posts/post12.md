@@ -8,4 +8,4 @@ frontImg: "../assets/images/post12/vsc181.jpg"
 round: 2
 ---
 
-INIZIA IL MITICO II TURNO DEL SUMMER VOLLEY Camp
+INIZIA L'AVVENTURA DEL MITICO SECONDO TURNO!!!
